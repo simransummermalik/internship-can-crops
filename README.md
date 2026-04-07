@@ -1,2 +1,3 @@
-# internship-can-crops
-This is the primary repository for our teams work, to create an application for a company called can crops!
+work in your own branches! Work in your own folders until we decide on a group push to main! Create readme.md documentations in your own folders!
+
+Make sure everyone is pushing to main once theyre done so we dont have any version mis-matches!
