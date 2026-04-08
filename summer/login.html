@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can Crops Inc. — Login</title>
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+
+  <!-- =====================================================
+       LEFT PANEL  (brand + mascot + facts)
+       ===================================================== -->
+  <div id="left-panel">
+
+    <div class="mascot-container">
+      <img id="left-mascot" src="" alt="" />
+    </div>
+
+    <div class="left-brand">
+      <img class="left-logo" src="../assets/logo.png" alt="Can Crops Inc." />
+      <h2 id="left-welcome-heading"></h2>
+      <p  id="left-welcome-text"></p>
+    </div>
+
+    <div id="left-facts"></div>
+
+  </div>
+
+  <!-- =====================================================
+       RIGHT PANEL  (login form)
+       ===================================================== -->
+  <div id="right-panel">
+
+    <a id="back-link" href="index.html" class="back-link"></a>
+
+    <div class="form-logo">
+      <img src="../assets/logo.png" alt="Can Crops Inc." />
+    </div>
+
+    <h1 id="form-heading"></h1>
+    <p  id="form-subtitle"></p>
+
+    <form id="login-form" novalidate>
+
+      <div class="form-group">
+        <label id="email-label" for="email-input"></label>
+        <input id="email-input" type="email" autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label id="password-label" for="password-input"></label>
+        <input id="password-input" type="password" autocomplete="current-password" />
+      </div>
+
+      <div class="form-options">
+        <label class="remember-label">
+          <input type="checkbox" />
+          <span id="remember-text"></span>
+        </label>
+        <a id="forgot-link" href="#"></a>
+      </div>
+
+      <button id="btn-submit" type="submit"></button>
+
+      <div class="divider">
+        <span id="divider-text"></span>
+      </div>
+
+      <button id="btn-guest" type="button"></button>
+
+    </form>
+
+    <p class="form-footer-text">
+      <span id="register-prompt"></span>
+      <a id="register-link" href="#"></a>
+      <br /><br />
+      <span id="contact-prompt"></span>
+      <a id="contact-link" href="#"></a>
+    </p>
+
+  </div>
+
+  <script src="js/login.js"></script>
+</body>
+</html>

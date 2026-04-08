@@ -1,0 +1,204 @@
+{
+  "company": {
+    "name": "Can Crops Inc.",
+    "email": "contact@cancrops.com",
+    "website": "www.cancrops.com",
+    "mascot_url": "https://clipart-library.com/images_k/transparent-gif-cute/transparent-gif-cute-17.jpg"
+  },
+  "nav": {
+    "links": [
+      { "label": "Home",    "href": "#home" },
+      { "label": "About",   "href": "#about" },
+      { "label": "Imports", "href": "#imports" },
+      { "label": "Exports", "href": "#exports" },
+      { "label": "Coffee",  "href": "#coffee" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "cta_label": "Login",
+    "cta_href":  "login.html"
+  },
+  "hero": {
+    "heading_line1": "Premium Agricultural",
+    "heading_line2": "Import & Export",
+    "description": "Canadian-based specialists in high-quality organic coffee beans, grains, lentils, pulses, edible oils, and more — delivering tailored solutions backed by robust logistics and compliance systems.",
+    "cta_primary":   "Explore Products",
+    "cta_secondary": "Get in Touch"
+  },
+  "stats": [
+    { "number": "6+",  "label": "Countries Sourced" },
+    { "number": "6",   "label": "Coffee Varieties"  },
+    { "number": "100%","label": "Quality Tested"    },
+    { "number": "4",   "label": "Roast Levels"      }
+  ],
+  "imports": {
+    "heading":    "What We Import",
+    "subheading": "Sourcing the finest agricultural commodities from around the globe to meet your market needs.",
+    "items": [
+      {
+        "category":    "Coffee",
+        "title":       "Coffee Beans",
+        "description": "Specialty organic beans sourced from Ethiopia, Kenya, Colombia and Brazil."
+      },
+      {
+        "category":    "Beans",
+        "title":       "Different Beans",
+        "description": "Wide variety of high-quality beans for industrial and niche markets."
+      },
+      {
+        "category":    "Lentils",
+        "title":       "Lentils",
+        "description": "Red, green, and black lentils sourced from premium growing regions."
+      },
+      {
+        "category":    "Peas",
+        "title":       "Peas",
+        "description": "Dixie Lee, Black Eye, Brown Crowder, Pink Eye, Zipper and Whiteacre varieties."
+      },
+      {
+        "category":    "Oils",
+        "title":       "Edible Oils",
+        "description": "Premium cooking and specialty oils for diverse culinary needs."
+      },
+      {
+        "category":    "Grains",
+        "title":       "Cereals & Grains",
+        "description": "Quality cereals and grains stored in temperature-controlled facilities."
+      }
+    ]
+  },
+  "coffee": {
+    "heading":    "Our Signature Coffee Beans",
+    "subheading": "Roasted from light to deep — each origin tells a unique story of flavour and terroir.",
+    "items": [
+      {
+        "origin":      "Ethiopia",
+        "country_code":"ET",
+        "name":        "Ethiopia Yirgacheffe",
+        "description": "Floral aroma with bright citrus sweetness and a delicate tea-like body. Bright acidity with intense, clean flavours and a hint of toasted coconut.",
+        "tags":        ["Floral", "Citrus", "Tea-like Body"],
+        "roast":       "Light to Medium"
+      },
+      {
+        "origin":      "Kenya",
+        "country_code":"KE",
+        "name":        "Central Kenya AA",
+        "description": "Bold blackcurrant notes with wine-like acidity and a complex, rich finish. One of the top five coffees in the world with a fragrant, floral aroma.",
+        "tags":        ["Blackcurrant", "Wine-like Acidity", "Complex Finish"],
+        "roast":       "Medium to Extra Dark"
+      },
+      {
+        "origin":      "Colombia",
+        "country_code":"CO",
+        "name":        "Colombia Caldas — Lucero Supremo",
+        "description": "Caramel sweetness with a fruity aroma and smooth, well-rounded medium body. Grown in high-altitude regions with rich volcanic soil.",
+        "tags":        ["Caramel", "Fruity", "Smooth Medium Body"],
+        "roast":       "Medium"
+      },
+      {
+        "origin":      "Colombia",
+        "country_code":"CO",
+        "name":        "Colombia Huila — Excelso",
+        "description": "Bright acidity, red apple sweetness, citrus and floral notes with a clean finish. Single-origin selection from the Huila region near Santa Maria.",
+        "tags":        ["Bright Acidity", "Citrus & Floral", "Clean Finish"],
+        "roast":       "Medium to Dark"
+      },
+      {
+        "origin":      "Brazil",
+        "country_code":"BR",
+        "name":        "Brazil A Reserva Cerrado Mineiro",
+        "description": "Sweet fruity profile with almond and chocolate notes. Naturally processed for a sweeter taste, low acidity, with hints of dark chocolate, brown sugar and caramel.",
+        "tags":        ["Sweet Fruity", "Almond & Chocolate", "Low Acidity"],
+        "roast":       "Medium Dark"
+      },
+      {
+        "origin":      "Brazil",
+        "country_code":"BR",
+        "name":        "Brazil Mantissa — Red Catuai",
+        "description": "Sweet cocoa and hazelnut profile with mild red fruit acidity. From the Serra das Tres Barras estate with fruity, berry-heavy mid-palate and striking finish.",
+        "tags":        ["Sweet Cocoa", "Hazelnut", "Mild Red Fruit Acidity"],
+        "roast":       "Light to Dark"
+      }
+    ]
+  },
+  "about": {
+    "heading": "About Can Crops Inc.",
+    "paragraphs": [
+      "We are a Canadian-based import-export company specializing in the distribution of high-quality agricultural commodities — from specialty organic coffee beans to an extensive variety of beans, peas, lentils, edible oils, pulses, cereals and grains.",
+      "Our hands-on approach covers every aspect of the process: supplier coordination, documentation, and shipment tracking — ensuring a seamless experience with high product standards and competitive pricing.",
+      "Our warehouse operations include importing, roasting from light to deep, custom blending to client specifications, quality testing and evaluation, and temperature-controlled storage to preserve freshness, purity and natural quality."
+    ]
+  },
+  "exports": {
+    "heading":    "What We Export",
+    "subheading": "Proudly exporting Canadian agricultural products to global markets.",
+    "items": [
+      {
+        "category":    "Grain",
+        "title":       "Oats",
+        "description": "Premium Canadian oats for food and industrial use."
+      },
+      {
+        "category":    "Grain",
+        "title":       "Barley",
+        "description": "High-grade barley for brewing and food production."
+      },
+      {
+        "category":    "Grain",
+        "title":       "Non-Durum Wheat",
+        "description": "Quality wheat for milling and export markets."
+      },
+      {
+        "category":    "Oil",
+        "title":       "Canola Oil & Seeds",
+        "description": "Canadian canola — oil and raw seeds available in bulk."
+      },
+      {
+        "category":    "Legume",
+        "title":       "Soya Beans & Oil",
+        "description": "Soya seeds and refined oil for diverse industries."
+      },
+      {
+        "category":    "Specialty",
+        "title":       "Lavender Oil & Seeds",
+        "description": "Premium lavender for wellness and cosmetic markets."
+      }
+    ]
+  },
+  "contact_banner": {
+    "heading":     "Ready to Work Together?",
+    "description": "Contact Manager Sukanya and our team for pricing, samples and custom orders.",
+    "cta_label":   "contact@cancrops.com",
+    "cta_href":    "mailto:contact@cancrops.com"
+  },
+  "footer": {
+    "copyright": "2025 Can Crops Inc.",
+    "website":   "www.cancrops.com",
+    "email":     "contact@cancrops.com"
+  },
+  "login": {
+    "heading":              "Sign In",
+    "subtitle":             "Enter your credentials to access your account",
+    "email_label":          "Email Address",
+    "email_placeholder":    "you@example.com",
+    "password_label":       "Password",
+    "password_placeholder": "Enter your password",
+    "remember_label":       "Remember me",
+    "forgot_label":         "Forgot password?",
+    "submit_label":         "Sign In",
+    "divider_text":         "or",
+    "guest_label":          "Continue as Guest",
+    "register_prompt":      "Don't have an account?",
+    "register_label":       "Request Access",
+    "contact_prompt":       "Questions? Email us at",
+    "back_label":           "Back to Home",
+    "left_panel": {
+      "welcome_heading": "Welcome Back!",
+      "welcome_text":    "Login to access your Can Crops account and manage your agricultural import-export orders, track shipments, and explore our product catalogue.",
+      "facts": [
+        "6 specialty coffee bean varieties",
+        "Sourced from Ethiopia, Kenya, Colombia and Brazil",
+        "Canadian-based with global reach"
+      ]
+    }
+  }
+}

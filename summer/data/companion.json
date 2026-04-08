@@ -1,0 +1,204 @@
+{
+  "brand": {
+    "name":         "Coffee Companion",
+    "tagline":      "Discover. Brew. Connect.",
+    "sponsor_line": "Powered by Can Crops Inc.",
+    "mascot_url":   "https://clipart-library.com/images_k/transparent-gif-cute/transparent-gif-cute-17.jpg"
+  },
+  "nav": {
+    "links": [
+      { "label": "Discover",     "href": "#discover"   },
+      { "label": "Origins",      "href": "#origins"    },
+      { "label": "Brewing",      "href": "#brewing"    },
+      { "label": "Community",    "href": "#community"  },
+      { "label": "Shop Beans",   "href": "#shop"       }
+    ]
+  },
+  "hero": {
+    "eyebrow":     "Your Coffee Companion",
+    "heading":     "Every cup has a story worth knowing.",
+    "description": "Explore the world of specialty coffee — from the farms of Ethiopia to the hills of Colombia. Discover new beans, master your brew, and build a passion that lasts.",
+    "cta_primary":   "Explore Beans",
+    "cta_secondary": "Start Learning"
+  },
+  "features": {
+    "heading":    "Everything a coffee lover needs",
+    "subheading": "One place to discover, learn, track, and connect.",
+    "items": [
+      {
+        "code":        "DB",
+        "title":       "Brew Discovery",
+        "description": "Explore specialty beans from around the world, filtered by origin, roast level, and flavour profile. Find your next favourite cup."
+      },
+      {
+        "code":        "PT",
+        "title":       "Preference Tracker",
+        "description": "Log every cup you try. Rate flavours, note your brewing method, and watch your personal taste profile take shape over time."
+      },
+      {
+        "code":        "LO",
+        "title":       "Learn Origins",
+        "description": "Dive deep into the stories behind each bean — the farmers, the regions, the climate, and the sustainable practices that make specialty coffee possible."
+      },
+      {
+        "code":        "CL",
+        "title":       "Cafe Locator",
+        "description": "Find local cafes that carry Can Crops beans near you. Support independent roasters and specialty shops in your city."
+      }
+    ]
+  },
+  "origins": {
+    "heading":    "Trace every cup to its source",
+    "subheading": "Can Crops sources directly from farms and co-operatives in four of the world's finest coffee-growing regions.",
+    "items": [
+      {
+        "country_code": "ET",
+        "country":      "Ethiopia",
+        "region":       "Yirgacheffe, Sidamo",
+        "altitude":     "1,700 – 2,200 m",
+        "process":      "Washed",
+        "profile":      "Floral aroma with bright citrus sweetness and a delicate tea-like body. Known as the birthplace of Arabica coffee.",
+        "bean":         "Ethiopia Yirgacheffe",
+        "roast":        "Light to Medium",
+        "sustainability":"Smallholder co-operatives with shade-grown, organic-certified practices."
+      },
+      {
+        "country_code": "KE",
+        "country":      "Kenya",
+        "region":       "Central Highlands",
+        "altitude":     "1,500 – 2,100 m",
+        "process":      "Washed (double-fermentation)",
+        "profile":      "Bold blackcurrant notes with wine-like acidity, full body, and a complex finish. A true connoisseur's cup.",
+        "bean":         "Central Kenya AA",
+        "roast":        "Medium to Extra Dark",
+        "sustainability":"AA-graded beans under Kenya Coffee Council standards. Farmer co-operatives with fair trade pricing."
+      },
+      {
+        "country_code": "CO",
+        "country":      "Colombia",
+        "region":       "Caldas & Huila",
+        "altitude":     "1,500 – 2,000 m",
+        "process":      "Washed",
+        "profile":      "Caramel sweetness, bright acidity, red apple notes, and a smooth medium body. Grown in Colombia's celebrated Coffee Belt.",
+        "bean":         "Colombia Caldas & Huila",
+        "roast":        "Medium to Dark",
+        "sustainability":"High-altitude volcanic soil farming. Multi-generational family farms with sustainable water management."
+      },
+      {
+        "country_code": "BR",
+        "country":      "Brazil",
+        "region":       "Cerrado Mineiro & Mantiqueira",
+        "altitude":     "900 – 1,300 m",
+        "process":      "Natural",
+        "profile":      "Sweet cocoa, hazelnut, and caramel. Low acidity with a full, syrupy body. Brazil's most celebrated specialty regions.",
+        "bean":         "Brazil Cerrado & Mantissa Red Catuai",
+        "roast":        "Medium Dark to Dark",
+        "sustainability":"Natural processing reduces water usage. Multi-generational farms in protected environmental zones."
+      }
+    ]
+  },
+  "brewing": {
+    "heading":    "Master your brewing method",
+    "subheading": "The same bean tastes different depending on how you brew it. Learn which method unlocks the best in each Can Crops origin.",
+    "items": [
+      {
+        "code":        "PO",
+        "method":      "Pour Over",
+        "time":        "3 – 4 min",
+        "grind":       "Medium-Fine",
+        "description": "Clean, bright, and precise. The pour over highlights delicate floral and citrus notes — ideal for light roasts like Ethiopia Yirgacheffe.",
+        "best_for":    "Ethiopia Yirgacheffe, Colombia Huila"
+      },
+      {
+        "code":        "FP",
+        "method":      "French Press",
+        "time":        "4 – 5 min",
+        "grind":       "Coarse",
+        "description": "Full-bodied and rich. The immersion method extracts deep chocolatey and nutty flavours — perfect for medium-dark Brazilian beans.",
+        "best_for":    "Brazil Cerrado Mineiro, Kenya AA"
+      },
+      {
+        "code":        "ES",
+        "method":      "Espresso",
+        "time":        "25 – 30 sec",
+        "grind":       "Fine",
+        "description": "Concentrated and intense. High pressure extraction produces a thick, syrupy shot with complex crema. Best with dark roasts.",
+        "best_for":    "Brazil Mantissa Red Catuai, Colombia Caldas"
+      },
+      {
+        "code":        "AP",
+        "method":      "AeroPress",
+        "time":        "2 – 3 min",
+        "grind":       "Medium",
+        "description": "Smooth and versatile. Fast pressure brewing produces a clean, low-acidity cup that works brilliantly across all roast levels.",
+        "best_for":    "All Can Crops origins"
+      },
+      {
+        "code":        "CB",
+        "method":      "Cold Brew",
+        "time":        "12 – 24 hrs",
+        "grind":       "Coarse",
+        "description": "Slow, cold extraction brings out natural sweetness and dramatically reduces bitterness. Silky smooth served over ice.",
+        "best_for":    "Brazil Cerrado Mineiro, Colombia Huila"
+      },
+      {
+        "code":        "MP",
+        "method":      "Moka Pot",
+        "time":        "5 – 8 min",
+        "grind":       "Medium-Fine",
+        "description": "Bold and stovetop-brewed. Strong, espresso-adjacent with a rich mouthfeel. A staple of traditional coffee culture.",
+        "best_for":    "Kenya AA, Brazil Mantissa Red Catuai"
+      }
+    ]
+  },
+  "sustainability": {
+    "heading":    "Good coffee, grown responsibly",
+    "subheading": "Can Crops partners only with farms that prioritise people, land, and long-term quality.",
+    "pillars": [
+      {
+        "code":  "FT",
+        "title": "Fair Trade Sourcing",
+        "description": "We pay above-market prices directly to farmers and co-operatives, ensuring fair wages and long-term viability for growing communities."
+      },
+      {
+        "code":  "OG",
+        "title": "Organic Practices",
+        "description": "Our Ethiopian and Colombian partners use organic-certified methods — no synthetic pesticides, shade-grown canopy, and composted soil."
+      },
+      {
+        "code":  "WC",
+        "title": "Water Conservation",
+        "description": "Natural processing methods used in Brazil significantly reduce water consumption compared to conventional washed processing."
+      },
+      {
+        "code":  "CL",
+        "title": "Climate Resilience",
+        "description": "We invest in varietal research and farm adaptation programs to help growers build resilience against shifting weather patterns."
+      }
+    ]
+  },
+  "community": {
+    "heading":    "Join a community of coffee lovers",
+    "subheading": "Coffee Companion is more than an app. It's where curiosity meets craft.",
+    "stats": [
+      { "number": "12,000+", "label": "Members"          },
+      { "number": "400+",    "label": "Brews Logged"     },
+      { "number": "6",       "label": "Origins Covered"  },
+      { "number": "4",       "label": "Roast Levels"     }
+    ],
+    "cta_label": "Join the Community"
+  },
+  "shop": {
+    "heading":    "Ready to brew? Shop Can Crops beans.",
+    "subheading": "Every bean you discover in Coffee Companion is available to order directly from Can Crops Inc. — roasted to order, shipped fresh.",
+    "cta_label":  "Shop All Beans",
+    "cta_href":   "mailto:contact@cancrops.com",
+    "note":       "Wholesale and B2B inquiries welcome. Contact us for bulk pricing and custom roasting."
+  },
+  "footer": {
+    "tagline":   "Coffee Companion is powered by Can Crops Inc.",
+    "copyright": "2025 Can Crops Inc.",
+    "email":     "contact@cancrops.com",
+    "website":   "www.cancrops.com"
+  }
+}
