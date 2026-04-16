@@ -252,6 +252,34 @@ a {
   letter-spacing: 0.3px;
 }
 
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper input {
+  padding-right: 58px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--terracotta);
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+  padding: 4px 2px;
+  font-family: var(--font-body);
+}
+
+.toggle-password:hover {
+  opacity: 0.75;
+}
+
 .form-group input {
   width: 100%;
   padding: 12px 15px;

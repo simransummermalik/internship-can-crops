@@ -1,35 +1,55 @@
 /* =========================================================
    Can Crops Inc. — Login Page JavaScript
-   Loads all text content from data/content.json
    ========================================================= */
 
-const DATA_URL = 'data/content.json';
-
 /* ---------------------------------------------------------
-   Fetch content from JSON
+   Inline content  (works with file:// and any server)
    --------------------------------------------------------- */
-async function loadContent() {
-  const response = await fetch(DATA_URL);
-  if (!response.ok) {
-    throw new Error(`Could not load ${DATA_URL} — status ${response.status}`);
+const LOGIN_CONTENT = {
+  company: {
+    name:       "Can Crops Inc.",
+    email:      "contact@cancrops.com",
+    mascot_url: "https://clipart-library.com/images_k/transparent-gif-cute/transparent-gif-cute-17.jpg"
+  },
+  login: {
+    heading:              "Sign In",
+    subtitle:             "Enter your credentials to access your account",
+    email_label:          "Email Address",
+    email_placeholder:    "you@example.com",
+    password_label:       "Password",
+    password_placeholder: "Enter your password",
+    remember_label:       "Remember me",
+    forgot_label:         "Forgot password?",
+    submit_label:         "Sign In",
+    divider_text:         "or",
+    guest_label:          "Continue as Guest",
+    register_prompt:      "Don\u2019t have an account?",
+    register_label:       "Request Access",
+    contact_prompt:       "Questions? Email us at",
+    back_label:           "Back to Home",
+    left_panel: {
+      welcome_heading: "Welcome Back!",
+      welcome_text:    "Login to access your Can Crops account and manage your agricultural import-export orders, track shipments, and explore our product catalogue.",
+      facts: [
+        "6 specialty coffee bean varieties",
+        "Sourced from Ethiopia, Kenya, Colombia and Brazil",
+        "Canadian-based with global reach"
+      ]
+    }
   }
-  return response.json();
-}
+};
 
 /* ---------------------------------------------------------
    Left panel — mascot, welcome text, facts
    --------------------------------------------------------- */
 function buildLeftPanel(login, company) {
-  /* mascot */
   const mascot = document.getElementById('left-mascot');
   mascot.src   = company.mascot_url;
   mascot.alt   = company.name;
 
-  /* welcome copy */
   document.getElementById('left-welcome-heading').textContent = login.left_panel.welcome_heading;
   document.getElementById('left-welcome-text').textContent    = login.left_panel.welcome_text;
 
-  /* facts list */
   const factList = document.getElementById('left-facts');
   login.left_panel.facts.forEach(fact => {
     const row     = document.createElement('div');
@@ -46,37 +66,21 @@ function buildLeftPanel(login, company) {
    Right panel — form labels & text
    --------------------------------------------------------- */
 function buildRightPanel(login, company) {
-  /* back link */
-  const backLink       = document.getElementById('back-link');
-  backLink.textContent = login.back_label;
-
-  /* heading / subtitle */
-  document.getElementById('form-heading').textContent  = login.heading;
-  document.getElementById('form-subtitle').textContent = login.subtitle;
-
-  /* email field */
-  document.getElementById('email-label').textContent      = login.email_label;
-  document.getElementById('email-input').placeholder      = login.email_placeholder;
-
-  /* password field */
-  document.getElementById('password-label').textContent   = login.password_label;
-  document.getElementById('password-input').placeholder   = login.password_placeholder;
-
-  /* options row */
-  document.getElementById('remember-text').textContent    = login.remember_label;
-  document.getElementById('forgot-link').textContent      = login.forgot_label;
-
-  /* buttons */
-  document.getElementById('btn-submit').textContent       = login.submit_label;
-  document.getElementById('divider-text').textContent     = login.divider_text;
-  document.getElementById('btn-guest').textContent        = login.guest_label;
-
-  /* footer text */
-  const registerLink       = document.getElementById('register-link');
-  registerLink.textContent = login.register_label;
-
-  document.getElementById('register-prompt').textContent  = login.register_prompt;
-  document.getElementById('contact-prompt').textContent   = login.contact_prompt;
+  document.getElementById('back-link').textContent         = login.back_label;
+  document.getElementById('form-heading').textContent      = login.heading;
+  document.getElementById('form-subtitle').textContent     = login.subtitle;
+  document.getElementById('email-label').textContent       = login.email_label;
+  document.getElementById('email-input').placeholder       = login.email_placeholder;
+  document.getElementById('password-label').textContent    = login.password_label;
+  document.getElementById('password-input').placeholder    = login.password_placeholder;
+  document.getElementById('remember-text').textContent     = login.remember_label;
+  document.getElementById('forgot-link').textContent       = login.forgot_label;
+  document.getElementById('btn-submit').textContent        = login.submit_label;
+  document.getElementById('divider-text').textContent      = login.divider_text;
+  document.getElementById('btn-guest').textContent         = login.guest_label;
+  document.getElementById('register-prompt').textContent   = login.register_prompt;
+  document.getElementById('register-link').textContent     = login.register_label;
+  document.getElementById('contact-prompt').textContent    = login.contact_prompt;
 
   const contactLink       = document.getElementById('contact-link');
   contactLink.textContent = company.email;
@@ -84,7 +88,22 @@ function buildRightPanel(login, company) {
 }
 
 /* ---------------------------------------------------------
-   Form submission handler
+   Show / hide password toggle
+   --------------------------------------------------------- */
+function bindPasswordToggle() {
+  const btn   = document.getElementById('toggle-password');
+  const input = document.getElementById('password-input');
+  if (!btn || !input) return;
+
+  btn.addEventListener('click', () => {
+    const show   = input.type === 'password';
+    input.type   = show ? 'text' : 'password';
+    btn.textContent = show ? 'Hide' : 'Show';
+  });
+}
+
+/* ---------------------------------------------------------
+   Form submission
    --------------------------------------------------------- */
 function bindFormEvents() {
   const form = document.getElementById('login-form');
@@ -101,14 +120,10 @@ function bindFormEvents() {
     }
 
     clearFormError();
-
-    /* TODO: replace with real auth call */
     console.log('[Can Crops] Login attempt:', email);
   });
 
-  const guestBtn = document.getElementById('btn-guest');
-  guestBtn.addEventListener('click', function () {
-    /* TODO: handle guest access */
+  document.getElementById('btn-guest').addEventListener('click', () => {
     console.log('[Can Crops] Guest access requested');
   });
 }
@@ -116,11 +131,10 @@ function bindFormEvents() {
 function showFormError(message) {
   let errEl = document.getElementById('form-error');
   if (!errEl) {
-    errEl           = document.createElement('p');
-    errEl.id        = 'form-error';
+    errEl               = document.createElement('p');
+    errEl.id            = 'form-error';
     errEl.style.cssText = 'color:#c0392b; font-size:13px; margin-bottom:14px; text-align:center;';
-    const form = document.getElementById('login-form');
-    form.insertAdjacentElement('afterbegin', errEl);
+    document.getElementById('login-form').insertAdjacentElement('afterbegin', errEl);
   }
   errEl.textContent = message;
 }
@@ -133,17 +147,12 @@ function clearFormError() {
 /* ---------------------------------------------------------
    Init
    --------------------------------------------------------- */
-async function init() {
-  try {
-    const data = await loadContent();
-
-    buildLeftPanel(data.login, data.company);
-    buildRightPanel(data.login, data.company);
-    bindFormEvents();
-
-  } catch (err) {
-    console.error('[Can Crops] Content load failed:', err.message);
-  }
+function init() {
+  const { login, company } = LOGIN_CONTENT;
+  buildLeftPanel(login, company);
+  buildRightPanel(login, company);
+  bindPasswordToggle();
+  bindFormEvents();
 }
 
 document.addEventListener('DOMContentLoaded', init);
