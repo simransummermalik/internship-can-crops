@@ -3,121 +3,207 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Can Crops Inc.</title>
+  <title>Can Crops Mobile Wireframes</title>
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+  <main class="wireframe-board" aria-label="Can Crops mobile wireframes">
+    <article id="home-screen" class="phone phone-home" aria-label="Home screen">
+      <div class="phone-shell">
+        <div class="phone-screen">
+          <header class="status-bar">
+            <span>9:41</span>
+            <span class="status-icons"><span></span><span></span><span></span></span>
+          </header>
 
-  <!-- =====================================================
-       NAVIGATION
-       ===================================================== -->
-  <nav id="main-nav">
-    <div class="nav-logo">
-      <a href="#home">
-        <img src="../assets/logo.png" alt="Can Crops Inc." />
-      </a>
-    </div>
-    <ul id="nav-links"></ul>
-    <a id="nav-cta" href="login.html"></a>
-  </nav>
+          <nav class="top-nav">
+            <button class="icon-button" aria-label="Menu"><span></span><span></span><span></span></button>
+            <img class="brand-logo" src="../assets/logo.png" alt="Can Crops Inc." />
+            <button class="bell-button" aria-label="Notifications"></button>
+          </nav>
 
-  <!-- =====================================================
-       HERO
-       ===================================================== -->
-  <section id="home">
-    <div id="hero">
-      <div class="hero-text">
-        <h1 id="hero-heading"></h1>
-        <p  id="hero-description"></p>
-        <div class="hero-cta-group">
-          <a id="hero-cta-primary"   href="#imports" class="btn-hero-primary"></a>
-          <a id="hero-cta-secondary" href="#contact"  class="btn-hero-outline"></a>
+          <section class="hero-panel">
+            <div class="hero-copy">
+              <h1>Sip Local<br>in Canada</h1>
+              <p>Discover amazing local coffee shops that brew community and quality.</p>
+            </div>
+          </section>
+
+          <section class="home-actions">
+            <label class="search-pill">
+              <span class="search-icon"></span>
+              <input type="search" value="" placeholder="Search coffee shops, neighborhoods..." />
+            </label>
+            <a class="primary-action" href="#explore-screen">Find Coffee Shops</a>
+          </section>
+
+          <footer class="tab-bar">
+            <a class="active" href="#home-screen"><span class="tab-icon home-icon"></span>Home</a>
+            <a href="#explore-screen"><span class="tab-icon compass-icon"></span>Explore</a>
+            <a href="#explore-screen"><span class="tab-icon pin-icon"></span>Map</a>
+            <a href="#detail-screen"><span class="tab-icon heart-icon"></span>Saved</a>
+            <a href="#detail-screen"><span class="tab-icon user-icon"></span>Profile</a>
+          </footer>
         </div>
       </div>
-      <div class="hero-mascot">
-        <img id="hero-mascot" src="" alt="" />
+    </article>
+
+    <article id="explore-screen" class="phone phone-explore" aria-label="Explore screen">
+      <div class="phone-shell">
+        <div class="phone-screen">
+          <header class="app-header">
+            <button class="icon-button" aria-label="Menu"><span></span><span></span><span></span></button>
+            <img class="brand-logo" src="../assets/logo.png" alt="Can Crops Inc." />
+            <a class="map-button" href="#detail-screen" aria-label="Map"></a>
+          </header>
+
+          <section class="location-row">
+            <span class="small-pin"></span>
+            <span>Toronto, ON</span>
+            <span class="chevron">v</span>
+          </section>
+
+          <section class="filter-row" aria-label="Filters">
+            <button class="filter-chip active">Nearby</button>
+            <button class="filter-chip">Open Now</button>
+            <button class="filter-chip">Specialty</button>
+            <button class="filter-chip">Cozy</button>
+          </section>
+
+          <section class="section-title">
+            <h2>Nearby Coffee Shops</h2>
+            <a href="#detail-screen">View Map <span class="small-pin green"></span></a>
+          </section>
+
+          <section class="shop-list" aria-label="Nearby coffee shops">
+            <a class="shop-row" href="#detail-screen">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=420&q=80" alt="" />
+              <div>
+                <h3>Queen St. Coffee</h3>
+                <p>Cafe &middot; Downtown Toronto</p>
+                <p><span class="star"></span> 4.6 (128) &middot; <strong>0.3 km</strong></p>
+                <p>Great espresso & pastries</p>
+              </div>
+              <span class="save-button" aria-hidden="true"></span>
+            </a>
+
+            <a class="shop-row" href="#detail-screen">
+              <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=420&q=80" alt="" />
+              <div>
+                <h3>Ossington Espresso</h3>
+                <p>Cafe &middot; West Toronto</p>
+                <p><span class="star"></span> 4.7 (94) &middot; <strong>1.1 km</strong></p>
+                <p>Locally roasted &middot; Cozy vibe</p>
+              </div>
+              <span class="save-button" aria-hidden="true"></span>
+            </a>
+
+            <a class="shop-row" href="#detail-screen">
+              <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=420&q=80" alt="" />
+              <div>
+                <h3>Riverdale Perk</h3>
+                <p>Cafe &middot; Riverdale</p>
+                <p><span class="star"></span> 4.5 (76) &middot; <strong>1.6 km</strong></p>
+                <p>Community focused</p>
+              </div>
+              <span class="save-button" aria-hidden="true"></span>
+            </a>
+          </section>
+
+          <section class="sold-here">
+            <h2>CAN CROPS SOLD HERE <span class="bean-mark"></span></h2>
+            <div class="sold-grid">
+              <a href="#detail-screen">
+                <img src="https://images.unsplash.com/photo-1493857671505-72967e2e2760?auto=format&fit=crop&w=300&q=80" alt="" />
+                <span class="checkmark"></span>
+                <h3>Bloom Coffee Co.</h3>
+                <p>Leslieville, Toronto</p>
+                <p><span class="star"></span> 4.8 (56)</p>
+              </a>
+              <a href="#detail-screen">
+                <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=300&q=80" alt="" />
+                <span class="checkmark"></span>
+                <h3>North & Oak</h3>
+                <p>Yonge & Eglinton</p>
+                <p><span class="star"></span> 4.7 (42)</p>
+              </a>
+              <a href="#detail-screen">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=300&q=80" alt="" />
+                <span class="checkmark"></span>
+                <h3>Field Day Coffee</h3>
+                <p>Danforth, Toronto</p>
+                <p><span class="star"></span> 4.6 (38)</p>
+              </a>
+            </div>
+          </section>
+
+          <footer class="tab-bar">
+            <a href="#home-screen"><span class="tab-icon home-icon"></span>Home</a>
+            <a class="active" href="#explore-screen"><span class="tab-icon compass-icon"></span>Explore</a>
+            <a href="#detail-screen"><span class="tab-icon pin-icon"></span>Map</a>
+            <a href="#detail-screen"><span class="tab-icon heart-icon"></span>Saved</a>
+            <a href="#detail-screen"><span class="tab-icon user-icon"></span>Profile</a>
+          </footer>
+        </div>
       </div>
-    </div>
-  </section>
+    </article>
 
-  <!-- =====================================================
-       STATS BAR
-       ===================================================== -->
-  <div id="stats-bar"></div>
+    <article id="detail-screen" class="phone phone-detail" aria-label="Coffee shop detail screen">
+      <div class="phone-shell">
+        <div class="phone-screen">
+          <header class="detail-header">
+            <a class="back-button" href="#explore-screen" aria-label="Back">&lt;</a>
+            <img class="brand-logo" src="../assets/logo.png" alt="Can Crops Inc." />
+            <a class="share-button" href="#home-screen" aria-label="Share"></a>
+          </header>
 
-  <!-- =====================================================
-       WHY CHOOSE US
-       ===================================================== -->
-  <section id="why-us" class="content-section bg-cream-alt">
-    <div class="section-header reveal">
-      <h2 id="why-heading"></h2>
-      <p  id="why-subheading"></p>
-    </div>
-    <div id="why-grid" class="why-grid"></div>
-  </section>
+          <section class="detail-photo" aria-label="Bloom Coffee Co."></section>
 
-  <!-- =====================================================
-       IMPORTS
-       ===================================================== -->
-  <section id="imports" class="content-section bg-white">
-    <div class="section-header reveal">
-      <h2 id="imports-heading"></h2>
-      <p  id="imports-subheading"></p>
-    </div>
-    <div id="imports-grid" class="product-grid"></div>
-  </section>
+          <section class="detail-card">
+            <div class="detail-title">
+              <div>
+                <h1>Bloom Coffee Co.</h1>
+                <p><span class="star"></span> 4.8 (56 Reviews) &middot; Specialty Cafe</p>
+              </div>
+              <span class="sold-badge">CAN CROPS<br>SOLD HERE</span>
+            </div>
+            <p class="meta-line"><span class="small-pin"></span>915 Queen St. E, Toronto, ON M4M 1J6, Canada</p>
+            <p class="meta-line"><span class="clock"></span><strong>Open Now</strong> &middot; 7:00 AM - 6:00 PM v</p>
 
-  <!-- =====================================================
-       COFFEE BEANS
-       ===================================================== -->
-  <section id="coffee" class="content-section bg-terra">
-    <div class="section-header reveal">
-      <h2 id="coffee-heading"></h2>
-      <p  id="coffee-subheading"></p>
-    </div>
-    <div id="coffee-grid" class="coffee-grid"></div>
-  </section>
+            <div class="detail-actions">
+              <a href="#explore-screen"><span class="round-icon nav-arrow"></span>Directions</a>
+              <a href="#home-screen"><span class="round-icon phone-icon"></span>Call</a>
+              <a href="#explore-screen"><span class="round-icon heart-round"></span>Save</a>
+            </div>
 
-  <!-- =====================================================
-       ABOUT
-       ===================================================== -->
-  <section id="about" class="content-section bg-cream">
-    <div class="about-text">
-      <h2 id="about-heading" class="reveal"></h2>
-      <div id="about-paragraphs"></div>
-    </div>
-    <div class="about-visual">
-      <div id="about-highlights" class="about-highlights"></div>
-    </div>
-  </section>
+            <div class="section-title product-title">
+              <h2>Can Crops Coffees Available</h2>
+              <a href="#explore-screen">View all</a>
+            </div>
 
-  <!-- =====================================================
-       EXPORTS
-       ===================================================== -->
-  <section id="exports" class="content-section bg-white">
-    <div class="section-header reveal">
-      <h2 id="exports-heading"></h2>
-      <p  id="exports-subheading"></p>
-    </div>
-    <div id="exports-grid" class="product-grid"></div>
-  </section>
+            <div class="coffee-products">
+              <article>
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=260&q=80" alt="" />
+                <h3>Ethiopian Yirgacheffe</h3>
+                <p><span></span> Light Roast</p>
+              </article>
+              <article>
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=260&q=80" alt="" />
+                <h3>Central Kenya AA</h3>
+                <p><span></span> Medium Roast</p>
+              </article>
+              <article>
+                <img src="https://images.unsplash.com/photo-1607681034540-2c46cc71896d?auto=format&fit=crop&w=260&q=80" alt="" />
+                <h3>Colombia Caldas Lucero Supremo</h3>
+                <p><span></span> Medium Roast</p>
+              </article>
+            </div>
 
-  <!-- =====================================================
-       CONTACT BANNER
-       ===================================================== -->
-  <div id="contact">
-    <h2 id="contact-heading"></h2>
-    <p  id="contact-description"></p>
-    <a  id="contact-cta" href="#"></a>
-  </div>
-
-  <!-- =====================================================
-       FOOTER
-       ===================================================== -->
-  <footer id="main-footer">
-    <p id="footer-text"></p>
-  </footer>
-
-  <script src="js/main.js"></script>
+            <a class="primary-action order-button" href="#home-screen">Order Can Crops Beans</a>
+          </section>
+        </div>
+      </div>
+    </article>
+  </main>
 </body>
 </html>
